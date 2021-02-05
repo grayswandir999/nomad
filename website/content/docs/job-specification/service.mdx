@@ -190,11 +190,11 @@ Connect][connect] integration.
   - `ignore` - Any status will be treated as healthy.
 
   ~> **Caveat:** `on_update` is only compatible with certain
-  [`check_restart`][check_restart_stanza] configurations. If `on_update` is set
-  to `ignore_warnings` then `check_restart` `ignore_warnings` must also be set
-  to true. `check_restart` can however specify `ignore_warnings` set to true
-  with `on_update` equal to `require_healthy`. If `on_update` is set to
-  `ignore`, `check_restart` must be omitted entirely.
+  [`check_restart`][check_restart_stanza] configurations. `on_update =
+  "ignore_warnings"` requires that `check_restart.ignore_warnings = true`.
+  `check_restart` can however specify `ignore_warnings = true` with `on_update
+  = "require_healthy"`. If `on_update` is set to `ignore`, `check_restart` must
+  be omitted entirely.
 
 
 ### `check` Parameters
@@ -321,11 +321,11 @@ scripts.
   - `ignore` - Any status will be treated as healthy.
 
   ~> **Caveat:** `on_update` is only compatible with certain
-  [`check_restart`][check_restart_stanza] configurations. If `on_update` is set
-  to `ignore_warnings` then `check_restart` `ignore_warnings` must also be set
-  to true. `check_restart` can however specify `ignore_warnings` set to true
-  with `on_update` equal to `require_healthy`. If `on_update` is set to
-  `ignore`, `check_restart` must be omitted entirely.
+  [`check_restart`][check_restart_stanza] configurations. `on_update =
+  "ignore_warnings"` requires that `check_restart.ignore_warnings = true`.
+  `check_restart` can however specify `ignore_warnings = true` with `on_update
+  = "require_healthy"`. If `on_update` is set to `ignore`, `check_restart` must
+  be omitted entirely.
 
 #### `header` Stanza
 
